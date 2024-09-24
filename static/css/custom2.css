@@ -43,14 +43,9 @@ body{
     
     }
 .logo1-mobile{
-        margin: -4%;
-        padding:0px;
-        align-items: center;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
+
+       
         background-color: 0px 1px 10px 2px rgb(30 200 255 / 65%);
-        border-radius: 10px;
     }
             
 
@@ -155,3 +150,32 @@ body{
     font-style: normal;
 
 }
+
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .blocos, body.dark-theme, body.dark-theme .blocos3 .blocos4 {
+    background-color: #000000;
+    color: #911515;
+    box-shadow: none;
+}
+
+body.dark-theme .blocos3 #filho1 {
+    box-shadow: 0px 1px 10px 2px rgb(255 255 255 / 65%);
+}
+
+body.dark-theme p {
+    color: #ffffff;
+}
+
+body.dark-theme a {
+    color: #80d4ff;
+}
+
+body.dark-theme header .logo1-mobile p {
+    color: #80d4ff;
+}
+
