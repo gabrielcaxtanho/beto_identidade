@@ -2,32 +2,37 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PET LOCALIZADO </title>
+    <title>PET LOCALIZADO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c0eae24639.js" crossorigin="anonymous"></script>
     <link rel="icon" href="https://static.vecteezy.com/ti/vetor-gratis/p3/21512828-cachorro-bravo-logotipo-simples-negativo-espaco-projeto-isolado-com-suave-fundo-vetor.jpg" type="image/png">
     <link rel="stylesheet" type="text/css" href="static/css/custom2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 </head>
 <body>
-    <header class="central2">
-        <section class="logo1-mobile">     
-            <p class="paragrafo_inicio"><i class="fa-solid fa-shield-dog fa-2xl" style="color: #f9f7f7;"></i>  PetResgate Premiado</p>
-        </section>
-    </header>
-      
-    <main class="elementos_centrais">
-        <div class="blocos" >
-            <p id="img"><img src="static/beto.jpeg" alt="Minha Imagem" style="width: 69%;border-radius: 10px; margin: -8px; "></p>
-            <p style="margin-top: 15%;"> nome</p>
-            <i class="fa-solid fa-bone fa-2xl" style="color: #f6bf59;"></i>
-            <p style="font-family: Sans-serif, Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;"> BETO</p>
-            <p ><i class="fa-solid fa-house-flag fa-xl"  id="icone"></i> Me ajude a retornar para minha casa!</p>
-            <p style="color: rgb(170, 0, 0); font-size: 16px;">OFERECEMOS RECOMPENSA!</p>
-        </div>
 
+    <!-- Botão para alternar tema -->
+    <button id="theme-toggle" style="position:fixed;top:10px;right:10px;padding:10px;border:none;background-color:#333;color:white;cursor:pointer;">
+        TEMAS
+    </button>
+
+    <main class="elementos_centrais">
+        <header class="central2">
+            <section class="logo1-mobile">     
+                <p class="paragrafo_inicio"><i class="fa-solid fa-shield-dog fa-2xl" style="color: #f9f7f7;"></i>  Pet Resgate</p>
+            </section>
+        </header>
+        <section>
+            <div class="blocos" >
+                <p id="img"><img src="static/beto.jpeg" alt="Minha Imagem" style="width: 69%;border-radius: 10px; margin: -8px; "></p>
+                <p style="margin-top: 15%;"> nome</p>
+                <i class="fa-solid fa-bone fa-2xl" style="color: #f6bf59;"></i>
+                <p style="font-family: Sans-serif, Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;"> BETO</p>
+                <p ><i class="fa-solid fa-house-flag fa-xl"  id="icone"></i> Me ajude a retornar para minha casa!</p>
+                <p style="color: rgb(170, 0, 0); font-size: 16px;">OFERECEMOS RECOMPENSA!</p>
+            </div>
+        </section>
         <div class="blocos" >
             <i class="fa-solid fa-dog fa-2xl" ></i><i class="fa-solid fa-cat fa-2xl"></i>
             <h1 style="font-size: 10px;">Contato</h1>
@@ -75,13 +80,22 @@
         <p class="texto__footer">PetresgateTrial e um servico pago, baseado em assinatura e sujeito a termos e condicoes. O servico PetresgateTrial e comercializado por GB Sistemas de Informatica S.A.</p>
     </footer>   
 
-</body>
-</html>
+<script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
 
+    toggleButton.addEventListener('click', () => {
+        // Alternar a classe dark-theme no body
+        body.classList.toggle('dark-theme');
 
-
-
-
+        // Alterar o texto e o ícone do botão conforme o tema
+        if(body.classList.contains('dark-theme')) {
+            toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            toggleButton.innerHTML = '<i class="fas fa-moon"></i> ';
+        }
+    });
+</script>
 
 <script src="static/js/bootstrap.js"></script>
 <script src="static/js/bootstrap.js"></script>
@@ -89,5 +103,3 @@
 
 </body>
 </html>
-
-
