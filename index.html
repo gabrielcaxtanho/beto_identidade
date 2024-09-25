@@ -13,7 +13,7 @@
 <body>
 
     <!-- Botão para alternar tema -->
-    <button id="theme-toggle" style="position:fixed;top:10px;right:10px;padding:10px;border:none;background-color:#333;color:white;cursor:pointer;">
+    <button id="theme-toggle" style="position:fixed;top:10px;right:10px;padding:10px;border:none;background-color:#333;color:white;cursor:pointer;border-radius: 10px;">
         TEMAS
     </button>
 
@@ -90,10 +90,10 @@
 
         // Alterar o texto e o ícone do botão conforme o tema
         if(body.classList.contains('dark-theme')) {
-            toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
-        } else {
-            toggleButton.innerHTML = '<i class="fas fa-moon"></i> ';
-        }
+    toggleButton.innerHTML = '<i class="fas fa-sun" style="color: yellow; "></i>';
+} else {
+    toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+}
     });
 </script>
 
